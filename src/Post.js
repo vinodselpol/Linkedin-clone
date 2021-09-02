@@ -6,11 +6,11 @@ import ShareOutlinedIcon from "@material-ui/icons/ShareOutlined";
 import ChatOutlinedIcon from "@material-ui/icons/ChatOutlined";
 import SendOutlinedIcon from "@material-ui/icons/SendOutlined";
 import InputOption from "./InputOption";
-function Post({ name, description, message, photourl }) {
+function Post({ name, description, message, photoUrl }) {
   return (
     <div className="post">
       <div className="post__header">
-        <Avatar />
+        <Avatar src={photoUrl}>{name[0].toUpperCase()}</Avatar>
         <div className="post__info">
           <h2>{name}</h2>
           <p>{description}</p>
